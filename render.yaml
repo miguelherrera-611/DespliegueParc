@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: notes-microservice
+    env: docker
+    branch: main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: "8000"
