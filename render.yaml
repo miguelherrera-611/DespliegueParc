@@ -1,11 +1,11 @@
-﻿﻿services:
+﻿services:
   - type: web
     name: pizzeria-pedidos
     env: docker
     branch: main
     dockerfilePath: Dockerfile
     envVars:
-      - key: PORTT
+      - key: PORT
         value: "8000"
 
   - type: web
