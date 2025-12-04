@@ -5,7 +5,7 @@
     branch: main
     dockerfilePath: Dockerfile
     envVars:
-      - key: PORT
+      - key: PORTT
         value: "8000"
 
   - type: web
