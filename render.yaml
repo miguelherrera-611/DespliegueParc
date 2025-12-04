@@ -1,9 +1,19 @@
-﻿services:
+﻿﻿services:
   - type: web
-    name: notes-microservice
+    name: pizzeria-pedidos
     env: docker
     branch: main
     dockerfilePath: Dockerfile
     envVars:
       - key: PORT
         value: "8000"
+
+  - type: web
+    name: pizzeria-entregas
+    env: docker
+    branch: main
+    dockerfilePath: Dockerfile.entregas
+    envVars:
+      - key: PORT
+        value: "8001"
+

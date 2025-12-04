@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  pedidos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pizzeria-pedidos
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    restart: unless-stopped
+
+  entregas:
+    build:
+      context: .
+      dockerfile: Dockerfile.entregas
+    container_name: pizzeria-entregas
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+    restart: unless-stopped
+
